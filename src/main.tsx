@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home/Home.tsx';
+import Contact from "./pages/Contact/Contact.tsx"
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path : "",
         element : <Home/>
+      },
+      {
+        path : "/contact",
+        element : <Contact/>
       }
     ]
   }

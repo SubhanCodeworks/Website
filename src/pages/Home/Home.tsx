@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
-import { GitHubLogoIcon } from "@radix-ui/react-icons"
+import { GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons"
 import { Code, Server, Smartphone, Database, Globe, Mail, Github, Layers, Terminal, Calendar, Cloud, Star, Menu } from "lucide-react"
 import { Link } from "react-router-dom"
 import { useState } from "react"
@@ -76,7 +76,7 @@ export default function LandingPage() {
               <GithubButton username="SubhanCodeworks" />
               <GithubButton username="SubhanKashif3" />
               <Button asChild>
-                <Link to="#contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </Button>
             </div>
 
@@ -132,7 +132,7 @@ export default function LandingPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <Button size="lg" className="w-full sm:w-auto" asChild>
-                <Link to="#contact">Start Your Project</Link>
+                <Link to="/contact">Start Your Project</Link>
               </Button>
               <Button variant="outline" size="lg" className="w-full sm:w-auto" asChild>
                 <Link to="https://subhan-kashif-porfolio.vercel.app" target="_blank" rel="noopener noreferrer">
@@ -295,6 +295,12 @@ export default function LandingPage() {
                     <Github className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
                     <a href="https://github.com/SubhanKashif3" className="text-xs sm:text-sm hover:underline break-all">
                       Github: SubhanKashif3
+                    </a>
+                  </li>
+                  <li className="flex items-center space-x-3">
+                    <InstagramLogoIcon className="h-4 w-4 sm:h-5 sm:w-5 text-primary flex-shrink-0" />
+                    <a href="https://www.instagram.com/subhan_codeworks/" className="text-xs sm:text-sm hover:underline break-all">
+                      Instagram : Subhancodeworks
                     </a>
                   </li>
                 </ul>
